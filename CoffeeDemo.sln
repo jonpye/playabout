@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeDemo", "CoffeeDemo\CoffeeDemo.csproj", "{906EDD65-75C5-4277-8B85-2B06B57B0117}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{72B04543-F414-48D2-B163-37EBA29A82D4}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{D88FAE71-B0A1-4B69-97E8-3B1862F4A896}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\CoffeeDemo-WAWS-dev.json = PublishScripts\Configurations\CoffeeDemo-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{906EDD65-75C5-4277-8B85-2B06B57B0117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906EDD65-75C5-4277-8B85-2B06B57B0117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906EDD65-75C5-4277-8B85-2B06B57B0117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906EDD65-75C5-4277-8B85-2B06B57B0117}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D88FAE71-B0A1-4B69-97E8-3B1862F4A896} = {72B04543-F414-48D2-B163-37EBA29A82D4}
+	EndGlobalSection
+EndGlobal
