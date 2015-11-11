@@ -1,0 +1,144 @@
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll.config
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.pdb
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\EntityFramework.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Google.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Newtonsoft.Json.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Owin.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Helpers.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Mvc.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Razor.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\WebGrease.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Helpers.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Mvc.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.Razor.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.pdb
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Newtonsoft.Json.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\EntityFramework.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Google.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.csprojResolveAssemblyReference.cache
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.dll
+c:\users\nbh1633\documents\visual studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.pdb
+c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.Migrations.CC.resources
+c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.csproj.GenerateResource.Cache
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll.config
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.pdb
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Google.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Web.Infrastructure.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Newtonsoft.Json.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Owin.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Helpers.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Mvc.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Razor.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\WebGrease.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.pdb
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensibility.Web.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Google.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Newtonsoft.Json.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Helpers.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Mvc.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Razor.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.csprojResolveAssemblyReference.cache
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.Migrations.CC.resources
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.csproj.GenerateResource.Cache
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Release\CoffeeDemo.pdb
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.xml

@@ -1,0 +1,231 @@
+﻿/* Some ractive play around stuff */
+.ractive-p {
+    width: 300px;
+    display: inline-block;
+    word-break: break-all;
+}
+
+.superheroes {
+    /*border: 1px solid rgb(210,210,210);
+        border: 1px solid rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        border-radius: 2px;*/
+    border-spacing: 0;
+}
+
+    .superheroes td, .superheroes th {
+        padding: 0.5em !important;
+        text-align: left;
+    }
+
+th {
+    background-color: rgba(0,0,0,0.7);
+    color: rgba(255,255,255,0.9);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+td {
+    background-color: rgba(255,255,255, 0.7);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+    td a {
+        font-weight: bold;
+    }
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th.sortable {
+    position: relative;
+    padding-left: 1.5em !important;
+    cursor: pointer;
+    width: 33.3%;
+    background: rgba(0,0,0,0.7) url(../../icons/sort-arrow.svg) no-repeat 4px 50%;
+    background-size: 0.8em 0.8em;
+}
+
+th.sorted {
+    background-image: url(../../icons/sort-arrow-sorted.svg);
+}
+
+/* Graph */
+
+h2 {
+	margin: 0 0 0.5em 0;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+.temperatures {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 4em 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2em;
+}
+
+.radio-group {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	padding: 0.5em 0 0 0;
+}
+
+.header h2 {
+	float: left;
+	margin: 0;
+}
+
+.header select {
+	position: relative;
+	top: 0.1em;
+	float: left;
+	clear: left;
+	font-size: inherit;
+	font-family: inherit;
+	z-index: 7;
+}
+
+.header label {
+	position: relative;
+	z-index: 7;
+}
+
+.header p {
+	float: left;
+	clear: left;
+	margin: 0;
+}
+
+.bar-chart {
+	position: relative;
+	padding: 0 0 3em 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.bar-group {
+	position: relative;
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+
+.month-label {
+	position: absolute;
+	bottom: -2em;
+	left: 0;
+	width: 100%;
+}
+
+.bar-outer {
+	position: absolute;
+	width: 100%;
+	padding: 0 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.bar-outer.positive {
+	bottom: 20%;
+}
+
+.bar-outer.positive .bar-inner {
+	bottom: 0;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	border-radius: 2px 2px 0 0;
+}
+
+.bar-outer.negative {
+	top: 80%;
+}
+
+.bar-outer.negative .bar-inner {
+	top: 0;
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	border-radius: 0 0 2px 2px;
+}
+
+.bar-outer.high.negative {
+	z-index: 6;
+}
+
+.bar-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.high.positive span {
+	top: -0.6em;
+	font-weight: bold;
+}
+
+.low.positive span {
+	top: 0.8em;
+	color: white;
+	text-shadow: 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1);
+}
+
+.high.negative span {
+	bottom: 0.8em;
+	color: white;
+	text-shadow: 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1);
+}
+
+.low.negative span {
+	bottom: -0.6em;
+	font-weight: bold;
+}
+
+.bar-chart span {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	font-family: 'Helvetica Neue', Arial;
+	font-size: 0.7em;
+	line-height: 0;
+	z-index: 6;
+}
+
+.axis {
+	position: relative;
+	width: 100%;
+	height: 0;
+	border-top: 1px solid #333;
+	z-index: 5;
+	left: 0;
+	top: 80%;
+}
+
+

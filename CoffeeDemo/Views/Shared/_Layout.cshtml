@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+   @Styles.Render("~/fullcalendar/css")
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "cacfca71-bd05-43c7-9dfb-98a482b740df"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Coffee Demo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Coffees", "Index", "Coffees")</li>
+                    <li>@Html.ActionLink("Companies", "Index", "Companies")</li>
+                    <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
+
+                    <li>
+                        <a href="#" id="popover" data-placement="right" data-toggle="popover">
+                            Other Links
+                        </a>
+                    </li>
+
+                    <div id="popover_content_wrapper" class="popover-container" style="display: none;">
+                        <div style="white-space: nowrap;">
+                            <div>@Html.ActionLink("ractive js", "ractive", "Home")</div>
+                            <div>@Html.ActionLink("Real time Updates", "SignalR", "Home")</div>
+                            <div> @Html.ActionLink("Google Calendar Demo", "Calendar", "Demo")</div>
+                            <div>@Html.ActionLink("Carousel Demo", "Photos", "Demo")</div>
+                        </div>
+                    </div>
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>You are using the <b>@HttpContext.Current.Request.Browser.Browser</b> browser, version <b>@HttpContext.Current.Request.Browser.Version</b></p>
+            <p class="margin-top-20">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom-scripts")
+    @Scripts.Render("~/bundles/angular-custom")
+    @Scripts.Render("~/fullcalendar/js")
+    
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

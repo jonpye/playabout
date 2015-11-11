@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignalR</title>
+</head>
+<body>
+    <div id="hitCount" style="font-size: 100px;">
+    </div>
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+
+    <script>
+        $(function () {
+            var con = $.hubConnection();
+            var hub = con.createHubProxy('HospitalDataHub');
+            hub.on('onHitRecorded', function (i) {
+                $('#hitCount').text(i);
+            });
+            con.start(function () {
+                hub.invoke('RecordHit');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Hospitals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+
+<div class="container" ng-controller="HospitalCtrl" ng-app="app">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ ListName }}</h2>
+
+            <table class="table table-striped table-fixed-header">
+                <thead class="header">
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Hospital Name
+                        </th>
+                        <th>
+                            Waiting Time
+                        </th>
+                        <th>
+                            No. Of Patients Waiting
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="hospital in hospitals">
+                        <td>
+                            {{ hospital.Id }}
+                        </td>
+                        <td>
+                            {{ hospital.Name }}
+                        </td>
+                        <td>
+                            {{ hospital.MinutesWaiting }} mins
+                        </td>
+                        <td>
+                            {{ hospital.Patients }}
+                        </td>
+                    </tr>
+
+                    <tr ng-if="model.length == 0">
+                        <td colspan="4">There are no Hospitals to display in the system.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+            <p>
+                <input type="text" class="form-control" ng-model="outputText">
+            </p>
+            <p>&nbsp;{{ outputText }}</p>
+        </div>
+    </div>
+</div>
+
+

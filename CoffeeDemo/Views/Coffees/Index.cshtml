@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Coffee List";
+}
+@*<script src="~/Scripts/Custom/jquery.stickytableheaders.js"></script>*@
+<div class="container" ng-controller="CoffeeCtrl" ng-app="app">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ ListName }}</h2>
+            @*<p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>*@
+
+            @*<p>{{ model | json | uppercase }}</p>*@
+
+
+            <table class="table table-striped table-fixed-header">
+                <thead class="header">
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Volume
+                        </th>
+                        <th>
+                            Company Name
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="coffee in model">
+                        <td>
+                            {{ coffee.Name }}
+                        </td>
+                        <td>
+                            {{ coffee.Volume }}
+                        </td>
+                        <td>
+                            {{ coffee.Company.CompanyName }}
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Coffees")/{{ coffee.Id }}">Edit</a> |
+                            <a href="@Url.Action("Details", "Coffees")/{{ coffee.Id }}">Details</a> |
+                            <a href="@Url.Action("Delete", "Coffees")/{{ coffee.Id }}">Delete</a>
+                        </td>
+                    </tr>
+
+                    <tr ng-if="model.length == 0">
+                        <td>There are no Coffees to display in the system.</td>
+                    </tr>
+
+                    <tr ng-if="states.showCoffeeForm">
+                        <td>
+                            <input type="text" class="form-control" placeholder="Name" ng-model="new.Coffee.Name" />
+                        </td>
+                        <td>
+                            <input type="text" class="form-control numeric" placeholder="Volume" ng-model="new.Coffee.Volume" />
+                        </td>
+                        <td>
+                            <select class="form-control" ng-model="new.Coffee.Company">
+                                <option value="" disabled selected>Select A Company...</option>
+                                <option ng:repeat="company in mCompany" value="{{ company.Id }}">{{ company.CompanyName }}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-apple"></span>&nbsp;Add&nbsp;<span class="badge">4</span></button>
+                            <a ng-click="showCoffeeForm(false);" class="btn btn-default">Cancel</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">{{ new.Coffee | json }}</td>
+                    </tr>
+                    @*<tr>
+                        <td colspan="4">{{ mCompany }}</td>
+                    </tr>*@
+                    <tr>
+                        <td><input type="text" class="form-control" ng-model="output"></td>
+                        <td colspan="3"><span>{{ output }}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a ng-click="showCoffeeForm(true);" class="btn btn-primary">Add Coffee</a>
+        </div>
+    </div>
+</div>

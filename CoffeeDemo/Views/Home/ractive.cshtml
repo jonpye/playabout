@@ -1,0 +1,306 @@
+﻿@{
+    ViewBag.Title = "ractive";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/ractive.css" rel="stylesheet" />
+
+<style id="output-styles" type="text/css">
+    #output-block h2 {
+        margin: 0 0 0.5em 0;
+    }
+
+    #output-block svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    #output-block .temperatures {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 4em 0 0 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    #output-block .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2em;
+    }
+
+    #output-block .radio-group {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        padding: 0.5em 0 0 0;
+    }
+
+    #output-block .header h2 {
+        float: left;
+        margin: 0;
+    }
+
+    #output-block .header select {
+        position: relative;
+        top: 0.1em;
+        float: left;
+        clear: left;
+        font-size: inherit;
+        font-family: inherit;
+        z-index: 7;
+    }
+
+    #output-block .header label {
+        position: relative;
+        z-index: 7;
+    }
+
+    #output-block .header p {
+        float: left;
+        clear: left;
+        margin: 0;
+    }
+
+    #output-block .bar-chart {
+        position: relative;
+        padding: 0 0 3em 0;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #output-block .bar-group {
+        position: relative;
+        float: left;
+        height: 100%;
+        text-align: center;
+    }
+
+    #output-block .month-label {
+        position: absolute;
+        bottom: -2em;
+        left: 0;
+        width: 100%;
+    }
+
+    #output-block .bar-outer {
+        position: absolute;
+        width: 100%;
+        padding: 0 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        #output-block .bar-outer.positive {
+            bottom: 20%;
+        }
+
+            #output-block .bar-outer.positive .bar-inner {
+                bottom: 0;
+                border-top: 1px solid #333;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
+                border-radius: 2px 2px 0 0;
+            }
+
+        #output-block .bar-outer.negative {
+            top: 80%;
+        }
+
+            #output-block .bar-outer.negative .bar-inner {
+                top: 0;
+                border-bottom: 1px solid #333;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
+                border-radius: 0 0 2px 2px;
+            }
+
+        #output-block .bar-outer.high.negative {
+            z-index: 6;
+        }
+
+    #output-block .bar-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #output-block .high.positive span {
+        top: -0.6em;
+        font-weight: bold;
+    }
+
+    #output-block .low.positive span {
+        top: 0.8em;
+        color: white;
+        text-shadow: 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1);
+    }
+
+    #output-block .high.negative span {
+        bottom: 0.8em;
+        color: white;
+        text-shadow: 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1), 0 0 3px rgba(0,0,0,1);
+    }
+
+    #output-block .low.negative span {
+        bottom: -0.6em;
+        font-weight: bold;
+    }
+
+    #output-block .bar-chart span {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        font-family: 'Helvetica Neue', Arial;
+        font-size: 0.7em;
+        line-height: 0;
+        z-index: 6;
+    }
+
+    #output-block .axis {
+        position: relative;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid #333;
+        z-index: 5;
+        left: 0;
+        top: 80%;
+    }
+</style>
+
+<h2>ractive js</h2>
+
+<!--
+     1. This is the element we'll render our Ractive to.
+-->
+<div id='container'></div>
+<div id='container-list'></div><br />
+<div id='container-graph'></div>
+<!--
+     2. You can load a template in many ways. For convenience, we'll include it in
+     a script tag so that we don't need to mess around with AJAX or multiline strings.
+     Note that we've set the type attribute to 'text/ractive' - though it can be
+     just about anything except 'text/javascript'
+-->
+
+<script id='template-intro' type='text/ractive'>
+    <p>Hello, {{name}}!</p>
+    <p>This is {{anotherDataItem}}</p>
+    <br />
+    <p>
+        <label>
+            Enter some data:
+            <input value='{{someData}}'>
+        </label>
+    </p>
+    <p class="ractive-p">Some data value:{{someData}}</p>
+</script>
+
+<script id='template-list' type='text/ractive'>
+    <table class='superheroes'>
+        <tr>
+            <th>Superhero name</th>
+            <th>Real name</th>
+            <th>Superpower</th>
+        </tr>
+
+        {{#each superheroes}}
+        <tr>
+            <td><a href='{{info}}'>{{name}}</a></td>
+            <td>{{realname}}</td>
+            <td>{{power}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</script>
+
+<script id='template-graph' type='text/ractive'>
+    <div id="output-block" class="boxxy-inner" style="position: relative; width: 100%; height: 100%; display: block; box-sizing: border-box; overflow: auto;">
+
+        <div class='temperatures'>
+
+            <!-- header and options -->
+            <div class='header'>
+                <h2>Average high and low temperature</h2>
+
+                <!-- switch between celsius and fahrenheit -->
+                <div class='radio-group'>
+                    <label>°C <input type='radio' name='{{degreeType}}' value='celsius' checked></label>
+                    <label>°F <input type='radio' name='{{degreeType}}' value='fahrenheit'></label>
+                </div>
+
+                <!-- dropdown menu -->
+                <select value='{{selectedIndex}}'>
+                    {{#each cities:i}}
+                    <option value='{{i}}'>{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+
+            <!-- the chart -->
+            <div class='bar-chart'>
+                {{#with selectedCity}}
+
+                <!-- 12 sections, one for each month -->
+                {{#each months:i}}
+                <div class='bar-group' style='width: {{ 100 / months.length }}%;'>
+
+                    <!-- average high temperature -->
+                    <div class='bar-outer high {{ (high >= 0) ? "positive" : "negative" }}' style='height: {{ scale(high) }}%;'>
+                        <div class='bar-inner' style='background-color: {{ getColor(high) }};'></div>
+                        <span>{{ format(high) }}</span>
+                    </div>
+
+
+                    <!-- average low temperature -->
+                    <div class='bar-outer low {{ (low >= 0) ? "positive" : "negative" }}' style='height: {{ scale(low) }}%;'>
+                        <div class='bar-inner' style='background-color: {{ getColor(low) }};'></div>
+                        <span>{{ format(low) }}</span>
+                    </div>
+
+                    <!-- month label (JFMAMJJASOND) -->
+                    <span class='month-label'>{{ monthNames[i] }}</span>
+                </div>
+                {{/each}}
+                {{/with}}
+
+                <!-- horizontal line representing freezing -->
+                <div class='axis'></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<!--
+     3. You can always get the most recent stable version from the URL below.
+     If you want the newest features (unstable!), use the 'edge' version instead:
+
+         http://cdn.ractivejs.org/edge/ractive.min.js
+
+     If you need IE8 support, change 'ractive' to 'ractive-legacy'.
+-->
+<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+
+<!--
+     4. We've got an element in the DOM, we've created a template, and we've
+     loaded the library - now it's time to build our Hello World app.
+-->
+<script src="~/Scripts/Custom/Ractive.js"></script>
+
+
+
+
+
