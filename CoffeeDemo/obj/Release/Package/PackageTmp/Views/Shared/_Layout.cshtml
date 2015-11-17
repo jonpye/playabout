@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using CoffeeDemo.Utils.Extensions
+
+@*<!DOCTYPE html>*@
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,7 +9,10 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/angular")
-    @*@Scripts.Render("~/bundles/cal-custom")*@
+    @Styles.Render("~/fullcalendar/css")
+
+    @RenderSection("HeadSection", required: false)
+    
 
     <script type="text/javascript">
         var appInsights = window.appInsights || function (config) {
@@ -21,85 +26,82 @@
     </script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Coffee Demo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Coffees", "Index", "Coffees")</li>
-                    <li>@Html.ActionLink("Companies", "Index", "Companies")</li>
-                    <li>@Html.ActionLink("Customers", "Index", "Customers")</li>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Playground", "Index", "Home", new {area = ""}, new {@class = "navbar-brand"})
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="@Html.LinkSelection(actions: "Index", controllers: "Home")">
+                    @Html.ActionLink("Home", "Index", "Home", new {Area = ""}, new {})
+                </li>
+                <li class="@Html.LinkSelection(actions: "About", controllers: "Home")">
+                    @Html.ActionLink("About", "About", "Home", new {Area = ""}, new {})
+                </li>
+                <li class="@Html.LinkSelection(actions: "Contact", controllers: "Home")">
+                    @Html.ActionLink("Contact", "Contact", "Home", new {Area = ""}, new {})
+                </li>
+                <li class="@Html.LinkSelection(actions: "ractive", controllers: "Home")">
+                    @Html.ActionLink("Ractive js", "ractive", "Home", new {Area = ""}, new {})
+                </li>
+                <li class="@Html.LinkSelection(actions: "SignalR", controllers: "Home")">
+                    @Html.ActionLink("SignalR", "SignalR", "Home")
+                </li>
+                <li class="@Html.LinkSelection(actions: "Calendar", controllers: "Demo")">
+                    @Html.ActionLink("Google Calendar", "Calendar", "Demo", new {Area = ""}, new {})
+                </li>
+                <li class="@Html.LinkSelection(actions: "Carousel", controllers: "Demo")">
+                    @Html.ActionLink("Carousel", "Carousel", "Demo", new {Area = ""}, new {})
+                </li>
 
-                    <li>
-                        <a href="#" id="popover" data-placement="bottom" data-toggle="popover">
-                            Other Links
-                        </a>
-                    </li>
+                <li>
+                    <a href="#" id="popover" data-placement="bottom" data-toggle="popover">
+                        Other Links
+                    </a>
+                </li>
 
-                    <div id="popover_content_wrapper" style="display: none;">
-                        <div style="white-space: nowrap;">
-                            <div>@Html.ActionLink("ractive js", "ractive", "Home")</div>
-                            <div>@Html.ActionLink("Real time Updates", "SignalR", "Home")</div>
-                            <div> @Html.ActionLink("Google Calendar Demo", "Calendar", "Demo")</div>
-                            <div>@Html.ActionLink("Carousel Demo", "Photos", "Demo")</div>
-                        </div>
+                <div id="popover_content_wrapper" class="popover-container" style="display: none;">
+                    <div style="white-space: nowrap;">
+                        <div>@Html.ActionLink("Coffees", "Index", "Coffees")</div>
+                        <div>@Html.ActionLink("Companies", "Index", "Companies")</div>
+                        <div>@Html.ActionLink("Customers", "Index", "Customers")</div>
                     </div>
+                </div>
+            </ul>
 
-                    @*<li><a href="#" data-toggle="popover" data-placement="bottom" data-content="<ul><li>test 1</li><li>test 2</li></ul>" data-html="true">Toggle popover</a></li>*@
-
-
-                    @*<div class="dropdown nav navbar-nav">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Other Links
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="nav navbar-nav"><li>Other Links</li></ul>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </div>*@
-
-
-
-                    @*<li>@Html.ActionLink("Dash Ex", "Hospitals", "Home")</li>*@
-                </ul>
-
-
-
-
-
-                @Html.Partial("_LoginPartial")
-            </div>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>You are using the <b>@HttpContext.Current.Request.Browser.Browser</b> browser, version <b>@HttpContext.Current.Request.Browser.Version</b></p>
-            <p class="margin-top-20">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+</div>
+<div class="container body-content">
+    
+    @RenderBody()
+    <hr/>
+
+    <footer>
+        <p>You are using the <b>@HttpContext.Current.Request.Browser.Browser</b> browser, version <b>@HttpContext.Current.Request.Browser.Version</b>
+        </p>
+        <p class="margin-top-20">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+</div>
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/custom-scripts")
     @Scripts.Render("~/bundles/angular-custom")
-    
-    @RenderSection("scripts", required: false)
+    @*@Scripts.Render("~/bundles/custom-3rdparty")*@
+    @Scripts.Render("~/fullcalendar/js")
 
+   
+@RenderSection("scripts", required: false)
+@RenderSection("BodySection", required: false)
 </body>
 </html>

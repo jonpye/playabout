@@ -9,8 +9,9 @@ namespace CoffeeDemo
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/jquery.signalR-2.2.0.js"));
+                        "~/Scripts/jquery-{version}.js"
+                        //,"~/Scripts/jquery.signalR-2.2.0.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -21,8 +22,8 @@ namespace CoffeeDemo
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/bootstrap.js", "~/Scripts/respond.js"
+                      ));
 
             // Bundle up angular
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
@@ -40,8 +41,8 @@ namespace CoffeeDemo
 
             // Bundle up any of our custom js scripts
             bundles.Add(new ScriptBundle("~/bundles/custom-scripts").Include(
-          "~/Scripts/Custom/CoffeeDemo.js",
-          //"~/Scripts/SignalR/HospitalData.js",
+          //"~/Scripts/Custom/CoffeeDemo.js",
+          "~/Scripts/SignalR/HospitalData.js",
           "~/Scripts/Custom/Demo.js"));
 
             // css for calendar
@@ -56,6 +57,12 @@ namespace CoffeeDemo
           //"~/fullcalendar/lib/jquery-ui.custom.min.js",
           "~/fullcalendar/fullcalendar.min.js",
           "~/fullcalendar/gcal.js"));
+
+            // Custom 3rd party scripts
+            bundles.Add(new ScriptBundle("~/bundles/custom-3rdparty").Include(
+                "~/Scripts/jquery-2.1.4.min.js"
+                //,"~/Scripts/Custom/Ractive.js"
+                ));
         }
     }
 }

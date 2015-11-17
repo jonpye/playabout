@@ -18,14 +18,11 @@
     });
 
 
-    // Calendar
+    // Calendar page
     $('#calendar').fullCalendar({
 
         googleCalendarApiKey: 'AIzaSyAtd_PjDFPVVZ7xVlXBG_o0wCjS5M5NPOY',
         events: 'n1ljmulrh99gvq2q8j70euqi7k@group.calendar.google.com',
-
-        //googleCalendarApiKey: 'AIzaSyAt65f6yHJ1zEjijWU27Bamj4BzWs6FPhE',
-        //events: 'jon.pye1@googlemail.com',
 
         header: {
             left: 'prev,next today',
@@ -48,4 +45,16 @@
         }
     });
 
+});
+
+//Signal R
+$(function () {
+    var con = $.hubConnection();
+    var hub = con.createHubProxy('HospitalDataHub');
+    hub.on('onHitRecorded', function (i) {
+        $('#hitCount').text(i);
+    });
+    con.start(function () {
+        hub.invoke('RecordHit');
+    });
 });

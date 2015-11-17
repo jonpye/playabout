@@ -14,7 +14,7 @@ namespace CoffeeDemo.Controllers
             return View();
         }
 
-        public ActionResult Photos()
+        public ActionResult Carousel()
         {
             return View();
         }

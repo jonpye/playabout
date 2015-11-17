@@ -1,9 +1,15 @@
 ﻿@{
     ViewBag.Title = "ractive";
+    //Layout = "~/Views/Shared/_LayoutTest.cshtml";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = null;
 }
 
-<link href="~/Content/ractive.css" rel="stylesheet" />
+@section HeadSection
+{
+    <script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")"></script>
+    <link href="@Url.Content("~/Content/ractive.css")" rel="stylesheet"/>
+}
 
 <style id="output-styles" type="text/css">
     #output-block h2 {
@@ -178,6 +184,28 @@
         left: 0;
         top: 80%;
     }
+
+    .superheroes {
+        width: 600px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*.tableFloatingHeader tr th, .tableFloatingHeaderOriginal tr th {
+        width: 100px !important; 
+        max-width: 100px !important; 
+        table-layout: fixed !important;
+        height: 20px !important;
+        white-space: nowrap;
+        float: left;
+        clear: none;
+    }*/
+
+    .first, .second, .third {
+        width: 200px !important;
+        padding: 0;
+        margin: 0;
+    }
 </style>
 
 <h2>ractive js</h2>
@@ -210,19 +238,22 @@
 
 <script id='template-list' type='text/ractive'>
     <table class='superheroes'>
-        <tr>
-            <th>Superhero name</th>
-            <th>Real name</th>
-            <th>Superpower</th>
-        </tr>
-
-        {{#each superheroes}}
-        <tr>
-            <td><a href='{{info}}'>{{name}}</a></td>
-            <td>{{realname}}</td>
-            <td>{{power}}</td>
-        </tr>
-        {{/each}}
+        <thead>
+            <tr>
+                <th class="first">Superhero name</th>
+                <th class="second">Real name</th>
+                <th class="third">Superpower</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each superheroes}}
+            <tr>
+                <td class="first"><a href='{{info}}'>{{name}}</a></td>
+                <td class="second">{{realname}}</td>
+                <td class="third">{{power}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
     </table>
 </script>
 
@@ -284,21 +315,13 @@
 </script>
 
 
-<!--
-     3. You can always get the most recent stable version from the URL below.
-     If you want the newest features (unstable!), use the 'edge' version instead:
-
-         http://cdn.ractivejs.org/edge/ractive.min.js
-
-     If you need IE8 support, change 'ractive' to 'ractive-legacy'.
--->
-<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
-
-<!--
-     4. We've got an element in the DOM, we've created a template, and we've
-     loaded the library - now it's time to build our Hello World app.
--->
-<script src="~/Scripts/Custom/Ractive.js"></script>
+@section BodySection
+    {
+    <script src="@Url.Content("~/ractive/ractive.min.js")"></script>
+    <script src=@Url.Content("~/Scripts/Custom/Ractive.js")></script>
+    <script src=@Url.Content("~/Scripts/jquery.stickytableheaders.min.js")></script>
+    <script src=@Url.Content("~/Scripts/Custom/StickyHeaders.js")></script>
+}
 
 
 

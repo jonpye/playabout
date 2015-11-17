@@ -23,3 +23,20 @@ textarea {
     max-width: 280px;
 }
 
+.numeric {
+    width: 100px;
+}
+
+.coffeeName {
+    width: 200px;
+}
+
+.fixed {
+    table-layout: fixed;
+}
+
+.selected-link > a {
+    color: #fff !important;
+}
+
+

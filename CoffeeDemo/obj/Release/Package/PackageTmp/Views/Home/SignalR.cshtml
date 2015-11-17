@@ -1,22 +1,14 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>SignalR</title>
-</head>
-<body>
     <div id="hitCount" style="font-size: 100px;">
     </div>
 
-    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
-    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+    @*<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>*@
 
-    <script>
+    @*<script>
         $(function () {
             var con = $.hubConnection();
             var hub = con.createHubProxy('HospitalDataHub');
@@ -27,9 +19,9 @@
                 hub.invoke('RecordHit');
             });
         });
-    </script>
+    </script>*@
 
-</body>
-</html>
+@*</body>
+</html>*@
 
 

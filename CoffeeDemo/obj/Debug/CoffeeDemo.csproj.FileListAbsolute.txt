@@ -134,11 +134,11 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csprojResolveAssemblyReference.cache
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.pdb
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.CC.resources
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csproj.GenerateResource.Cache
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.pdb

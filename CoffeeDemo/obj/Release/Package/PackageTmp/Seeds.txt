@@ -1,11 +1,13 @@
-﻿            context.Companies.AddOrUpdate(
-              p => p.CompanyName,
-              new Company { CompanyName = "Costa" },
-              new Company { CompanyName = "Starbucks" },
-              new Company { CompanyName = "Nessa" },
-              new Company { CompanyName = "Cafe Nero" },
-              new Company { CompanyName = "Coffee #1" },
-              new Company { CompanyName = "ASDA" }
+﻿ protected override void Seed(CoffeeDemo.Models.CoffeeDemoContext context)
+        {
+            context.Companies.AddOrUpdate(
+                p => p.CompanyName,
+                new Company { Id = 1, CompanyName = "Costa" },
+                new Company { Id = 2, CompanyName = "Starbucks" },
+                new Company { Id = 3, CompanyName = "Nessa" },
+                new Company { Id = 4, CompanyName = "Cafe Nero" },
+                new Company { Id = 5, CompanyName = "Coffee #1" },
+                new Company { Id = 6, CompanyName = "ASDA" }
             );
 
             context.Coffees.AddOrUpdate(
@@ -20,3 +22,11 @@
                 new Coffee { Name = "Hot Chocolate", Volume = 100, CompanyId = 4 },
                 new Coffee { Name = "Macciato", Volume = 100, CompanyId = 1 }
             );
+
+            context.Customers.AddOrUpdate(
+                c => c.Id,
+                new Customer { FirstName = "joe", Surname = "bloggs", Dob = DateTime.Now.AddYears(-25).Date, HouseNumber = 21, PostCode = "GL53 4RT" },
+                new Customer { FirstName = "joe", Surname = "bloggs", Dob = DateTime.Now.AddYears(-20).Date, HouseNumber = 22, PostCode = "GL53 4RT" },
+                new Customer { FirstName = "joe", Surname = "bloggs", Dob = DateTime.Now.AddYears(-30).Date, HouseNumber = 23 }
+            );
+        }

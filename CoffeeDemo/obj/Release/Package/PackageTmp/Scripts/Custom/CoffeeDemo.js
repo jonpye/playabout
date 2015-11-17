@@ -3,17 +3,9 @@ $("select").change(function () {
     $("select option[value='']").remove();
 });
 
-$(document).ready(function () {
 
-    $('#popover').popover({
-        html: true,
-        content: function () {
-            return $('#popover_content_wrapper').html();
-        }
-    });
 
-    
-});
+
 
 
 

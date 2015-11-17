@@ -24,6 +24,19 @@ textarea {
 }
 
 .numeric {
-    width: 20px;
+    width: 100px;
 }
+
+.coffeeName {
+    width: 200px;
+}
+
+.fixed {
+    table-layout: fixed;
+}
+
+.selected-link > a {
+    color: #fff !important;
+}
+
 
