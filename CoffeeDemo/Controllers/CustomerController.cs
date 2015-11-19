@@ -11,7 +11,7 @@ using CoffeeDemo.Models;
 
 namespace CoffeeDemo.Controllers
 {
-    public class CustomersController : Controller
+    public class CustomerController : Controller
     {
         private CoffeeDemoContext db = new CoffeeDemoContext();
 

@@ -1,5 +1,10 @@
 ﻿$(document).ready(function () {
 
+    // background for home
+    if ($("#main-home").data("homepage") !== undefined) {
+        $("body").addClass("background-img");
+    }
+
     $('#popover').popover({
         html: true,
         content: function () {
@@ -58,3 +63,6 @@ $(function () {
         hub.invoke('RecordHit');
     });
 });
+
+
+

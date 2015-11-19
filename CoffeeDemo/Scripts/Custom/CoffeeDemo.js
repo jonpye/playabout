@@ -2,10 +2,3 @@
 $("select").change(function () {
     $("select option[value='']").remove();
 });
-
-
-
-
-
-
-

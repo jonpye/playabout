@@ -210,14 +210,17 @@
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\CoffeesController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
-    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HospitalHub.cs" />
-    <Compile Include="Migrations\CoffeeConfiguration.cs" />
+    <Compile Include="Migrations\201511180907209_CoffeeDemo.cs" />
+    <Compile Include="Migrations\201511180907209_CoffeeDemo.Designer.cs">
+      <DependentUpon>201511180907209_CoffeeDemo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Coffee.cs" />
@@ -243,7 +246,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CoffeeDemo.css" />
-    <Content Include="Content\Custom\Preloader_8.gif" />
+    <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\Preloader_8.gif" />
     <Content Include="Content\ractive.css" />
     <Content Include="favicon.ico" />
     <Content Include="fullcalendar\changelog.txt" />
@@ -1211,21 +1215,21 @@
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\ractive.cshtml" />
     <Content Include="Scripts\json\temperature.json" />
-    <Content Include="Views\Customers\Create.cshtml" />
-    <Content Include="Views\Customers\Delete.cshtml" />
-    <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Customers\Edit.cshtml" />
-    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customer\Create.cshtml" />
+    <Content Include="Views\Customer\Delete.cshtml" />
+    <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Customer\Edit.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Home\hospitals.cshtml" />
     <Content Include="Scripts\json\hospitals.json" />
     <Content Include="Views\Home\SignalR.cshtml" />
     <Content Include="Views\Demo\Calendar.cshtml" />
     <Content Include="Views\Demo\Carousel.cshtml" />
     <Content Include="Views\Home\_RactivePartial.cshtml" />
-    <Content Include="Views\Shared\_LayoutTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Custom\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1236,6 +1240,11 @@
       <Project>{bc7aeeef-cd5d-40c6-b27a-67369dc05a58}</Project>
       <Name>CoffeeDemo.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511180907209_CoffeeDemo.resx">
+      <DependentUpon>201511180907209_CoffeeDemo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

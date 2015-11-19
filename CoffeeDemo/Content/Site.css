@@ -39,4 +39,32 @@ textarea {
     color: #fff !important;
 }
 
+#loading {
+    position: fixed;
+    /*left: 0;
+            top: 0;*/
+    /*left: 40%;
+            top: 50%;*/
+    margin: -25px 0 0 -25px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    background: url(../../Content/Images/Preloader_8.gif) center no-repeat #fff;
+    opacity: 0.8;
+}
 
+.background-img {
+     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -moz-min-width: 50%;
+    -ms-min-width: 50%;
+    -o-min-width: 50%;
+    -webkit-min-width: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    background-image: url('/Content/Images/background.png');
+}

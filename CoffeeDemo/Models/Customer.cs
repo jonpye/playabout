@@ -20,7 +20,6 @@ namespace CoffeeDemo.Models
         [Required(ErrorMessage = "House number is required")]
         public int HouseNumber { get; set; }
 
-
         public string PostCode { get; set; }
     }
 }

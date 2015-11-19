@@ -142,3 +142,5 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.pdb
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.CoffeeDemo.resources
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csproj.GenerateResource.Cache
