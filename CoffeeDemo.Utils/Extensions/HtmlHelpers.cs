@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -16,6 +17,14 @@ namespace CoffeeDemo.Utils.Extensions
         /// <returns></returns>
         public static string LinkSelection(this HtmlHelper html, string controllers = "", string actions = "", string cssClass = "selected-link")
         {
+            // Ensure we have no rogue white spaces if we have a string array of actions
+            if (actions.Contains(",")) 
+                actions = Regex.Replace(actions, @"\s+", "");
+            
+            // Same for controllers
+            if (controllers.Contains(",")) 
+                controllers = Regex.Replace(controllers, @"\s+", "");
+
             ViewContext viewContext = html.ViewContext;
             bool isChildAction = viewContext.Controller.ControllerContext.IsChildAction;
 
@@ -34,6 +43,7 @@ namespace CoffeeDemo.Utils.Extensions
 
             string[] acceptedActions = actions.Trim().Split(',').Distinct().ToArray();
             string[] acceptedControllers = controllers.Trim().Split(',').Distinct().ToArray();
+           
 
             return acceptedActions.Contains(currentAction) && acceptedControllers.Contains(currentController) ?
                 cssClass : string.Empty;

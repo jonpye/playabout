@@ -1,12 +1,10 @@
 ﻿@{
     ViewBag.Title = "ractive";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    //Layout = null;
 }
 
 @section HeadSection
 {
-    @*<script src="@Url.Content("~/Scripts/jquery-2.1.4.min.js")"></script>*@
     <link href="@Url.Content("~/Content/ractive.css")" rel="stylesheet"/>
 }
 
@@ -206,6 +204,8 @@
         margin: 0;
     }
 </style>
+
+<title>@ViewBag.Title</title>
 
 <h2>ractive js</h2>
 

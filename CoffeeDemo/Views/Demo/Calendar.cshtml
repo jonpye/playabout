@@ -1,9 +1,10 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Google Calendar";
 }
 
 
-<title>View Google Calendar Demo</title>
+<title>@ViewBag.Title</title>
 
 <style>
     body {
@@ -20,7 +21,7 @@
     }
 
     #calendar {
-        width: 900px;
+        width: 800px;
         margin: 0 auto;
         cursor: default !important;
     }

@@ -1,8 +1,13 @@
 ﻿@{
     ViewBag.Title = "Coffee List";
 }
-@*<script src="~/Scripts/Custom/jquery.stickytableheaders.js"></script>*@
-<div class="container" ng-controller="CoffeeCtrl" ng-app="app">
+
+@section SecondMenuLinks
+{
+    @Html.Partial("_SecondMenu")
+}
+
+<div class="container" ng-controller="CoffeeCtrl" ng-app="app" ng-cloak>
     <div class="row">
         <div class="col-md-12">
             <h2>{{ ListName }}</h2>
@@ -14,7 +19,7 @@
 
 
             <table class="table table-striped fixed">
-                <thead class="header">
+                <thead class="header white-background">
                     <tr>
                         <th>
                             Name
@@ -64,23 +69,21 @@
                             </select>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-apple"></span>&nbsp;Add&nbsp;<span class="badge">4</span></button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCoffeeModal">Add Number&nbsp;<span class="badge">{{ model.length + 1 }}</span></button>
                             <a ng-click="showCoffeeForm(false);" class="btn btn-default">Cancel</a>
                         </td>
                     </tr>
-                    <tr>
+                    <tr ng-show="!isCoffeeFormVisible()">
                         <td colspan="4">{{ new.Coffee | json }}</td>
                     </tr>
-                    @*<tr>
-                            <td colspan="4">{{ mCompany }}</td>
-                        </tr>*@
-                    <tr>
-                        <td><a ng-click="showCoffeeForm(true);" class="btn btn-primary">Add Coffee</a></td>
+             
+                    <tr ng-show="isCoffeeFormVisible()">
+                        <td colspan="4"><a ng-click="showCoffeeForm(true);" class="btn btn-primary">Add Coffee&nbsp;<span class="badge">{{ model.length }}</span></a></td>
                     </tr>
 
                     <tr>
                         <td>Favourite Coffee: <input type="text" class="form-control" ng-model="output"></td>
-                        <td colspan="3"><span>You like {{ output }}</span></td>
+                        <td colspan="3"><span>You like <b>{{ output }}</b></span></td>
                     </tr>
                 </tbody>
             </table>
@@ -88,3 +91,41 @@
         </div>
     </div>
 </div>
+
+<div id="addCoffeeModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">TODO</h4>
+            </div>
+            <div class="modal-body">
+                <p>AngularJS Functionality not included to add at present...</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+@section BodySection
+{
+    <script src=@Url.Content("~/Scripts/jquery.stickytableheaders.min.js")></script>
+    <script>
+        var offset = $('.navbar').height() + $('.nav-2').height();
+        $("table").stickyTableHeaders({ fixedOffset: offset });
+
+        // If the scroll position hits the offset, amend the props of our header (class white-background)      
+        var $w = ($(window).scroll(function () {
+            if ($w.scrollTop() > offset) {
+                $('.white-background').css({ "border-bottom": "5px solid #4682b4", "color": "#ffffff" });
+            } else {
+                $('.white-background').css({ "border-bottom": "none", "color": "#000000" });
+            }
+        }));
+    </script>
+}
+
+

@@ -1226,6 +1226,7 @@
     <Content Include="Views\Demo\Calendar.cshtml" />
     <Content Include="Views\Demo\Carousel.cshtml" />
     <Content Include="Views\Home\_RactivePartial.cshtml" />
+    <Content Include="Views\Shared\_SecondMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

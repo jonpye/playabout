@@ -36,7 +36,7 @@
             @Html.DisplayFor(modelItem => item.Surname)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Dob)
+            @Html.DisplayFor(modelItem => item.Dob.Date)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.HouseNumber)
@@ -50,3 +50,8 @@
 }
 
 </table>
+
+@section SecondMenuLinks
+{
+    @Html.Partial("_SecondMenu")
+}
