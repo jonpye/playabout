@@ -6,9 +6,9 @@
     $(".nav-pills > li").find("a[href='" + url + "']").parent().addClass("active");
 
     // background for home
-    if ($("#main-home").data("homepage") !== undefined) {
+    //if ($("#bg").data("homepage") !== undefined) {
         $("body").addClass("background-img");
-    }
+    //}
 
     // Illustrate popover
     $('#popover').popover({
@@ -78,7 +78,65 @@
 
     $('[data-toggle="tooltip"]').tooltip();
 
-});
+
+    // top of page link to fade in when page scrolls to x px!
+    $(window).scroll(function () {
+        $(this).scrollTop() > 200 ? $('#toTop').slideDown() : $('#toTop').slideUp();
+        $('.alert').slideUp();
+
+        // Show or hide the angular nav bar
+        angularBar(true);
+    });
+
+    // If not on angular page (contacts controller) slide the nav bar up and deselect the link in menu
+    var angularBar = function (isScroll) {
+        isScroll = isScroll || false;
+        if (url.indexOf('/Contacts') < 0) {
+            isScroll ? $('.angular-menu').slideUp() : $('.angular-menu').hide();
+            $('.angular-link').parent().removeClass('selected-link-green');
+        }
+        else {
+            $('.angular-menu').show().slideDown();
+            $('.angular-link').parent().addClass('selected-link-green');
+        }
+    }
+   
+    // Check for each page
+    angularBar();
+
+    $('#toTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+
+    // To allow bs modals (if exists on page) to open and the page not shift when scroll bar hides
+    var fixedCls = '.navbar-fixed-top,.navbar-fixed-bottom';
+    var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
+    $.fn.modal.Constructor.prototype.setScrollbar = function () {
+        oldSSB.apply(this);
+        if (this.bodyIsOverflowing && this.scrollbarWidth)
+            $(fixedCls).css('padding-right', this.scrollbarWidth);
+    }
+
+    var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
+    $.fn.modal.Constructor.prototype.resetScrollbar = function () {
+        oldRSB.apply(this);
+        $(fixedCls).css('padding-right', '');
+    }
+    if (this.bodyIsOverflowing && this.scrollbarWidth) $('.navbar-fixed-top').css('padding-right', this.scrollbarWidth);
+
+    // If we have a modal, remove the css for html that uses overflow-y: scroll (set to auto) 
+    if ($('.modal-dialog').length > 0) $('html').css("overflow-y", "auto");
+    
+
+    // Click event of angular menu item
+    $('.angular-link').click(function () {
+        $('.angular-menu').slideToggle();
+        $(this).parent().toggleClass('selected-link-green');
+    });
+
+});  // End document load
+
 
 // Determine if users browser is IE, pass in a version to return true or false
 function isIE(version, comparison) {
@@ -99,6 +157,11 @@ $(function () {
     con.start(function () {
         hub.invoke('RecordHit');
     });
+});
+
+// For any drop down lists that have an empty value (i.e. "Select X...") remove that entry on change
+$('select').change(function () {
+    $("select option[value='']").remove();
 });
 
 

@@ -67,12 +67,14 @@ c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj
 c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.pdb
 c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.CC.resources
 c:\Users\nbh1633\Documents\Visual Studio 2013\Projects\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csproj.GenerateResource.Cache
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csprojResolveAssemblyReference.cache
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll.config
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.pdb
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.dll
@@ -83,6 +85,9 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.T
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.dll
@@ -104,6 +109,7 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\WebGrease.dll
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.pdb
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Antlr3.Runtime.pdb
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\EntityFramework.SqlServer.xml
@@ -114,6 +120,9 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.ApplicationInsights.Web.T
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Core.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.Owin.Security.xml
@@ -131,16 +140,8 @@ C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Deployment.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.WebPages.Razor.xml
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\System.Web.Optimization.xml
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csprojResolveAssemblyReference.cache
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.dll
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.pdb
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.dll
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Core.xml
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.dll
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\Microsoft.AspNet.SignalR.Client.xml
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.dll
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\bin\CoffeeDemo.Utils.pdb
-C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.CoffeeDemo.resources
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.initial1.resources
 C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.csproj.GenerateResource.Cache
+C:\DevelopmentCode\CoffeeDemo\CoffeeDemo\obj\Debug\CoffeeDemo.Migrations.contactTestField.resources

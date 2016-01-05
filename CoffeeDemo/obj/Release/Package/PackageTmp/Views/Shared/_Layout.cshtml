@@ -72,7 +72,7 @@
                     </li>
 
                     <li class="@Html.LinkSelection(actions: "Index", controllers: "Coffees, Companies, Customer")">
-                        @Html.ActionLink("Other Links", "Index", "Coffees", new { Area = "" }, new { data_toggle="tooltip", data_placement="bottom", title="Click to view other links!" })
+                        @Html.ActionLink("Other Links", "Index", "Coffees", new { Area = "" }, new { data_toggle = "tooltip", data_placement = "bottom", title = "Click to view other links!" })
                     </li>
 
                     @*<li>
@@ -82,12 +82,12 @@
                         </li>*@
 
                     @*<div id="popover_content_wrapper" class="popover-container" style="display: none; z-index: 10001;">
-                        <div style="white-space: nowrap;">
-                            <div>@Html.ActionLink("Coffees", "Index", "Coffees")</div>
-                            <div>@Html.ActionLink("Companies", "Index", "Companies")</div>
-                            <div>@Html.ActionLink("Customers", "Index", "Customer")</div>
-                        </div>
-                    </div>*@
+                            <div style="white-space: nowrap;">
+                                <div>@Html.ActionLink("Coffees", "Index", "Coffees")</div>
+                                <div>@Html.ActionLink("Companies", "Index", "Companies")</div>
+                                <div>@Html.ActionLink("Customers", "Index", "Customer")</div>
+                            </div>
+                        </div>*@
                 </ul>
 
                 @Html.Partial("_LoginPartial")
@@ -97,42 +97,47 @@
     </div>
 
 
-@RenderSection("SecondMenuLinks", required: false)
-@*@Html.Partial("_SecondMenu")*@
+    @RenderSection("SecondMenuLinks", required: false)
+    @*@Html.Partial("_SecondMenu")*@
 
-@*<div class="container nav-2 navbar-fixed-top" style="display: none;">
-    <ul class="nav nav-pills">
-        <li class="active">@Html.ActionLink("Coffees", "Index", "Coffees")</li>
-        <li>@Html.ActionLink("Companies", "Index", "Companies")</li>
-        <li>@Html.ActionLink("Customers", "Index", "Customer")</li>
-    </ul>
-</div>*@
+    @*<div class="container nav-2 navbar-fixed-top" style="display: none;">
+            <ul class="nav nav-pills">
+                <li class="active">@Html.ActionLink("Coffees", "Index", "Coffees")</li>
+                <li>@Html.ActionLink("Companies", "Index", "Companies")</li>
+                <li>@Html.ActionLink("Customers", "Index", "Customer")</li>
+            </ul>
+        </div>*@
 
-<div class="container body-content">
+    <div class="container body-content">
 
-    @RenderBody()
-    <hr/>
+        @RenderBody()
+        <hr />
 
-    <footer class="navbar-fixed-bottom">
-        <p class="footer p-left">
-            You are using the browser <b>@HttpContext.Current.Request.Browser.Browser</b>, version <b>@HttpContext.Current.Request.Browser.Version</b>
-        </p>
-        <p class="footer p-right">&copy; @DateTime.Now.Year - Playground</p>
-    </footer>
-</div>
+        <footer class="navbar-fixed-bottom">
+            <p class="footer p-left">
+                You are using the browser <b>@HttpContext.Current.Request.Browser.Browser</b>, version <b>@HttpContext.Current.Request.Browser.Version</b>
+            </p>
+            <p class="footer p-right">&copy; @DateTime.Now.Year - Playground</p>
+        </footer>
+    </div>
 
-@Scripts.Render("~/bundles/jquery")
-<script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+    <!-- -->
+    <a href="#top" id="toTop" style="display: none;" data-toggle="tooltip" data-placement="left" title="Click to auto scroll to top of this page">
+        <span class="toplink glyphicon glyphicon-eject"></span>
+    </a>
 
-@Scripts.Render("~/bundles/bootstrap")
-@Scripts.Render("~/bundles/custom-scripts")
-@Scripts.Render("~/bundles/angular-custom")
-@*@Scripts.Render("~/bundles/custom-3rdparty")*@
-@Scripts.Render("~/fullcalendar/js")
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/custom-scripts")
+    @Scripts.Render("~/bundles/angular-custom")
+    @*@Scripts.Render("~/bundles/custom-3rdparty")*@
+    @Scripts.Render("~/fullcalendar/js")
 
 
-@RenderSection("scripts", required: false)
-@RenderSection("BodySection", required: false)
+    @RenderSection("scripts", required: false)
+    @RenderSection("BodySection", required: false)
 
 
 </body>

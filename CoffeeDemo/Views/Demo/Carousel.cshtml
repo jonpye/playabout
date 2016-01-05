@@ -1,33 +1,32 @@
-﻿
-@{
+﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Carousel";
 }
 
 <title>@ViewBag.Title</title>
 
-    <style>
-        .item {
-            background: #333;
-            text-align: center;
-            height: 300px !important;
-        }
+<style>
+    .item {
+        background: #333;
+        text-align: center;
+        height: 300px !important;
+    }
 
-        h2 {
-            margin: 0;
-            color: #888;
-            padding-top: 100px;
-            font-size: 50px;
-        }
+    h2 {
+        margin: 0;
+        color: #888;
+        padding-top: 100px;
+        font-size: 50px;
+    }
 
-        .thumbnail {
-            margin-top: 10px;
-        }
-    </style>
+    .thumbnail {
+        margin-top: 10px;
+    }
+</style>
 
- <meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="width=device-width" />
 
-<div>
+<div id="bg" data-homepage>
 
     <div class="thumbnail">
         <div id="DemoCarousel" class="carousel slide" data-interval="4000" data-ride="carousel">
@@ -42,21 +41,21 @@
                 <div class="item active">
                     <h2>Hello</h2>
                     <div class="carousel-caption">
-                        <h3>This is the First Label</h3>
+                        <h3>This is the First Content</h3>
                         <p>The Content of the First Slide goes in here</p>
                     </div>
                 </div>
                 <div class="item">
                     <h2>Bonjour</h2>
                     <div class="carousel-caption">
-                        <h3>This is the Second Label</h3>
+                        <h3>This is the Second Content</h3>
                         <p>The Content of the second Slide goes in here</p>
                     </div>
                 </div>
                 <div class="item">
                     <h2>Hola</h2>
                     <div class="carousel-caption">
-                        <h3>This is the Third Label</h3>
+                        <h3>This is the Third Content</h3>
                         <p>The Content of the Third Slide goes in here</p>
                     </div>
                 </div>
@@ -73,6 +72,37 @@
 
 
 </div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4>Heading Text</h4>
+            </div>
+            <div class="panel-body">
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4>Another Heading Text</h4>
+            </div>
+            <div class="panel-body">
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <script type="text/javascript">

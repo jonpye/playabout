@@ -3,7 +3,7 @@ namespace CoffeeDemo.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CoffeeDemo : DbMigration
+    public partial class initial1 : DbMigration
     {
         public override void Up()
         {
@@ -30,6 +30,21 @@ namespace CoffeeDemo.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.Contacts",
+                c => new
+                    {
+                        ContactId = c.Int(nullable: false, identity: true),
+                        Firstname = c.String(),
+                        Surname = c.String(),
+                        ContactTypeId = c.Int(nullable: false),
+                        Phone = c.String(),
+                        TwitterHandle = c.String(),
+                        GenderTypeId = c.Int(nullable: false),
+                        IsActive = c.Boolean(nullable: false),
+                    })
+                .PrimaryKey(t => t.ContactId);
+            
+            CreateTable(
                 "dbo.Customers",
                 c => new
                     {
@@ -49,6 +64,7 @@ namespace CoffeeDemo.Migrations
             DropForeignKey("dbo.Coffees", "CompanyId", "dbo.Companies");
             DropIndex("dbo.Coffees", new[] { "CompanyId" });
             DropTable("dbo.Customers");
+            DropTable("dbo.Contacts");
             DropTable("dbo.Companies");
             DropTable("dbo.Coffees");
         }

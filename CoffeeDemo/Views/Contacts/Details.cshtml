@@ -1,0 +1,82 @@
+﻿@model CoffeeDemo.Models.Contact
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Contact</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Firstname)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Firstname)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Surname)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Surname)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ContactTypeId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ContactTypeId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TwitterHandle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TwitterHandle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.GenderTypeId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.GenderTypeId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.IsActive)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ContactId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

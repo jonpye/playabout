@@ -1,4 +1,16 @@
-﻿body {
+﻿.scroll-overflow-y {
+    overflow-y: scroll;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+hr {
+    display: none;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -41,6 +53,20 @@ textarea {
     background-color: #ba55d3 !important;
 }
 
+.selected-link-green > a,
+.angular-menu {
+    color: #fff !important;
+    background-color: #356f35 !important;
+}
+
+.nav-angular li a {
+    color: #ffffff !important;
+}
+
+.nav-angular li a:hover {
+    color: #356f35 !important;
+}
+
 #loading {
     position: fixed;
     /*left: 0;
@@ -68,12 +94,14 @@ textarea {
     -webkit-min-width: 50%;
     min-width: 50%;
     min-height: 50%;
-    background-image: url('../Content/Images/background.png');
+    /*background-image: url('../Content/Images/background.png');*/
+    background-image: url('../Content/Images/background-green.png');
+    /*background-image: url('../Content/Images/background-trees.png');*/
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* messing around with grandients */
+/* messing around with gradients */
 .panel-coffee-red > .panel-heading {
   background-image: -webkit-linear-gradient(top, #fa8072 0%, #b22222 100%);
   background-image:      -o-linear-gradient(top, #fa8072 0%, #b22222 100%);
@@ -84,7 +112,7 @@ textarea {
   color: #fff;
 }
 
-/* messing around with grandients */
+/* messing around with gradients */
 .panel-coffee-blue > .panel-heading {
   background-image: -webkit-linear-gradient(top, #6BBBED 0%, #5B92B5 100%);
   background-image:      -o-linear-gradient(top, #6BBBED 0%, #5B92B5 100%);
@@ -143,6 +171,7 @@ textarea {
 .navbar-fixed-bottom, 
 .navbar-fixed-top {
     background-color: #4b0082;
+    position: fixed !important;
 }
 
 .navbar-fixed-bottom {
@@ -183,6 +212,14 @@ textarea {
     font-family: fantasy;
     font-size: 24px;
     color: #fffafa !important;
+    /*position:fixed !important;*/
+}
+
+.logo {
+    /*top: 7px;*/
+    /*padding-right: 20px;*/
+    top: 3px;
+    position: relative;
 }
 
 table thead tr th,
@@ -198,3 +235,63 @@ textarea {
     border-bottom: 3px solid #4682b4;
 }*/
 
+
+/* top link ripped from mvc untity example */
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 1.0em;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background: #eee;
+    box-shadow: 0px 0px 2px #8d8888;
+    border-radius: 3px;
+}
+
+.toplink {
+    margin-top: 5px;
+}
+
+/* Ractive */
+.divTableWithFloatingHeader {
+    padding-bottom: 30px;
+}
+
+.table-striped {
+    background-color: #fff !important;
+}
+
+.angular-link {
+    cursor: pointer;
+}
+
+.angular-menu {
+   z-index: 100000;
+}
+
+/* override bootstrap */
+.panel-body-50 {
+    min-height: 50px;
+    overflow: auto;
+}
+
+.well-bg-green {
+    background-color: #c4d0b0;
+}
+
+.table-head-black tbody tr th {
+    background-color: #4b0082;
+    color: #fff;
+    border-bottom: 5px solid #b1adad;
+}
+
+.nav-angular li.active a {
+    background-color: #eeeeee !important;
+    color: #356f35 !important;
+}

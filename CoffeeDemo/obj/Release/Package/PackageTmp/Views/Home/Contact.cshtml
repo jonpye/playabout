@@ -1,14 +1,15 @@
-﻿@{
+﻿<!-- This page uses knockout js -->
+
+@{
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
+    123 Wayward Street<br />
+    Cheltenham<br />
+    <abbr title="Phone">P:</abbr>01234 567890
 </address>
 
 <address>
@@ -17,15 +18,11 @@
 </address>
 
 <div id="form-section">
-    @*@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, UpdateTargetId = "form-section" }))
-    {*@
     <form id="contact-form" method="post">
         <p><textarea name="message" id="message" maxlength="150" data-bind="value:msg, valueUpdate:'input'"></textarea></p>
         <p><input type="submit" value="Send Message" class="btn btn-danger" /></p>
         <p><span data-bind="text:charactersRemaining" class="font-20"></span> characters remaining</p>
     </form>
-
-    @*}*@
 </div>
 
 @section scripts {

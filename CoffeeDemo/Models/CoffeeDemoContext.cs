@@ -24,6 +24,8 @@ namespace CoffeeDemo.Models
         public DbSet<Company> Companies { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Contact> Contacts { get; set; }
     
     }
 }

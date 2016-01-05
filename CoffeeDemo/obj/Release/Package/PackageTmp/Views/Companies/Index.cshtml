@@ -1,21 +1,21 @@
 ﻿@model IEnumerable<CoffeeDemo.Models.Company>
 <link href="~/Content/style.css" rel="stylesheet" />
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Companies";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
-<p>
+@*<p>
     @Html.ActionLink("Create New", "Create")
-</p>
+</p>*@
 <table class="table table-striped">
     <thead class="header">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.CompanyName)
         </th>
-        <th></th>
+        @*<th></th>*@
     </tr>
     </thead>
     <tbody>
@@ -26,11 +26,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.CompanyName)
             </td>
-            <td>
+            @*<td>
                 @Html.ActionLink("Edit", "Edit", new {id = item.Id}) |
                 @Html.ActionLink("Details", "Details", new {id = item.Id}) |
                 @Html.ActionLink("Delete", "Delete", new {id = item.Id})
-            </td>
+            </td>*@
         </tr>
     }
     </tbody>

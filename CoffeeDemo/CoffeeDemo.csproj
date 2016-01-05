@@ -207,6 +207,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\CoffeesController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
@@ -217,9 +218,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HospitalHub.cs" />
-    <Compile Include="Migrations\201511180907209_CoffeeDemo.cs" />
-    <Compile Include="Migrations\201511180907209_CoffeeDemo.Designer.cs">
-      <DependentUpon>201511180907209_CoffeeDemo.cs</DependentUpon>
+    <Compile Include="Migrations\201512300741193_initial1.cs" />
+    <Compile Include="Migrations\201512300741193_initial1.Designer.cs">
+      <DependentUpon>201512300741193_initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512301004484_contactTestField.cs" />
+    <Compile Include="Migrations\201512301004484_contactTestField.Designer.cs">
+      <DependentUpon>201512301004484_contactTestField.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -227,6 +232,7 @@
     <Compile Include="Models\CoffeeDemoContext.cs" />
     <Compile Include="Models\CoffeeDemoContextInitializer.cs" />
     <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -246,7 +252,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CoffeeDemo.css" />
+    <Content Include="Content\Images\background-green.png" />
+    <Content Include="Content\Images\background-trees.png" />
     <Content Include="Content\Images\background.png" />
+    <Content Include="Content\Images\playground1.png" />
+    <Content Include="Content\Images\playground2.png" />
     <Content Include="Content\Images\Preloader_8.gif" />
     <Content Include="Content\ractive.css" />
     <Content Include="favicon.ico" />
@@ -1227,6 +1237,12 @@
     <Content Include="Views\Demo\Carousel.cshtml" />
     <Content Include="Views\Home\_RactivePartial.cshtml" />
     <Content Include="Views\Shared\_SecondMenu.cshtml" />
+    <Content Include="Views\Contacts\Create.cshtml" />
+    <Content Include="Views\Contacts\Delete.cshtml" />
+    <Content Include="Views\Contacts\Details.cshtml" />
+    <Content Include="Views\Contacts\Edit.cshtml" />
+    <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Views\Shared\_AngularMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1243,8 +1259,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201511180907209_CoffeeDemo.resx">
-      <DependentUpon>201511180907209_CoffeeDemo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201512300741193_initial1.resx">
+      <DependentUpon>201512300741193_initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512301004484_contactTestField.resx">
+      <DependentUpon>201512301004484_contactTestField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

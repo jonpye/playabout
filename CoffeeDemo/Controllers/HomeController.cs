@@ -43,14 +43,14 @@ namespace CoffeeDemo.Controllers
 
         public ActionResult AboutTest()
         {
-            ViewBag.Message = "Your test message header h3.";
+            ViewBag.Message = "About test message.";
 
             return View("About");
         }
         // GET: /home/contact
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "The contact page.";
 
             return View();
         }
@@ -62,6 +62,5 @@ namespace CoffeeDemo.Controllers
 
             return View("ContactThanks");
         }
-
     }
 }

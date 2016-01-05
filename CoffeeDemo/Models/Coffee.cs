@@ -25,5 +25,4 @@ namespace CoffeeDemo.Models
         public Company Company { get; set; }
     }
 
-
 }

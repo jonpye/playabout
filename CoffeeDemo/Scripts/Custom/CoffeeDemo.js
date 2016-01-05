@@ -2,3 +2,5 @@
 $("select").change(function () {
     $("select option[value='']").remove();
 });
+
+// * THIS (ABOVE) IS INCLUDED IN DEMO.JS, SO THIS JS FILE CAN BE REFACTORED OUT!

@@ -8,9 +8,16 @@
 }
 
 <div class="container" ng-controller="CoffeeCtrl" ng-app="app" ng-cloak>
+    
+
+    <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;<strong>Test Alert</strong> - scroll page, or <strong>close</strong> to remove this test alert.
+    </div>
+
     <div class="row">
         <div class="col-md-12">
-            <h2>{{ ListName }}</h2>
+            <h2>{{ ListName }}&nbsp;<span class="badge">{{ model.length }}</span></h2>
             @*<p>
                     @Html.ActionLink("Create New", "Create")
                 </p>*@
@@ -46,8 +53,8 @@
                         </td>
                         <td>
                             <a href="@Url.Action("Edit", "Coffees")/{{ coffee.Id }}">Edit</a> |
-                            <a href="@Url.Action("Details", "Coffees")/{{ coffee.Id }}">Details</a> |
-                            <a href="@Url.Action("Delete", "Coffees")/{{ coffee.Id }}">Delete</a>
+                            <a href="@Url.Action("Details", "Coffees")/{{ coffee.Id }}">Details</a>
+                            @* |<a href="@Url.Action("Delete", "Coffees")/{{ coffee.Id }}">Delete</a>*@
                         </td>
                     </tr>
 
@@ -69,21 +76,21 @@
                             </select>
                         </td>
                         <td>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCoffeeModal">Add Number&nbsp;<span class="badge">{{ model.length + 1 }}</span></button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCoffeeModal">Add Coffee No.&nbsp;<span class="badge">{{ model.length + 1 }}</span></button>
                             <a ng-click="showCoffeeForm(false);" class="btn btn-default">Cancel</a>
                         </td>
                     </tr>
                     <tr ng-show="!isCoffeeFormVisible()">
                         <td colspan="4">{{ new.Coffee | json }}</td>
                     </tr>
-             
+
                     <tr ng-show="isCoffeeFormVisible()">
-                        <td colspan="4"><a ng-click="showCoffeeForm(true);" class="btn btn-primary">Add Coffee&nbsp;<span class="badge">{{ model.length }}</span></a></td>
+                        <td colspan="4"><a ng-click="showCoffeeForm(true);" class="btn btn-primary">Add Coffee</a></td>
                     </tr>
 
                     <tr>
                         <td>Favourite Coffee: <input type="text" class="form-control" ng-model="output"></td>
-                        <td colspan="3"><span>You like <b>{{ output }}</b></span></td>
+                        <td colspan="3"><span>You like <b>{{ output | lowercase }}</b></span></td>
                     </tr>
                 </tbody>
             </table>
@@ -108,8 +115,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-
 @section BodySection
 {
     <script src=@Url.Content("~/Scripts/jquery.stickytableheaders.min.js")></script>
@@ -117,7 +122,7 @@
         var offset = $('.navbar').height() + $('.nav-2').height();
         $("table").stickyTableHeaders({ fixedOffset: offset });
 
-        // If the scroll position hits the offset, amend the props of our header (class white-background)      
+        // If the scroll position hits the offset, amend the props of our header (class white-background)
         var $w = ($(window).scroll(function () {
             if ($w.scrollTop() > offset) {
                 $('.white-background').css({ "border-bottom": "5px solid #4682b4", "color": "#ffffff" });

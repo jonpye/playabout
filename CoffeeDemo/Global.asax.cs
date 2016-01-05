@@ -14,8 +14,20 @@ namespace CoffeeDemo
     {
         protected void Application_Start()
         {
+
+            //Database.SetInitializer(new CoffeeDemoContextInitializer());
+
             //Database.SetInitializer<CoffeeDemoContext>(new CoffeeDemoContextInitializer());
-            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CoffeeDemoContext>);
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CoffeeDemoContext>());
+
+            //CoffeeDemoContextInitializer db = new CoffeeDemoContextInitializer();
+            //db.InitializeDatabase(new CoffeeDemoContext());
+
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CoffeeDemoContext>());
+
+            Database.SetInitializer(new CoffeeDemoContextInitializer());
+            CoffeeDemoContext coffeeDemoContext = new CoffeeDemoContext();
+            coffeeDemoContext.Database.Initialize(true);
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
